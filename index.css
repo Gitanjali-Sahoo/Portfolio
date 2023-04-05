@@ -1,0 +1,572 @@
+/* Option 2: Import via CSS */
+@import url('https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css');
+
+body {
+    box-sizing: border-box;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.navbar-nav {
+    margin-left: auto;
+}
+
+.nav-item :hover {
+    background-color: aqua;
+    border-radius: 15px;
+}
+
+span {
+    color: aqua;
+}
+.navbar-brand {
+    font-weight: bold;
+}
+
+/*Home Page section*/
+
+#home {
+    display: flex;
+    justify-content: space-around;
+
+    background-color: #000;
+    width: 100%;
+    height: 100vh;
+    align-items: center;
+    color: white;
+}
+.social-media a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 2rem;
+    height: 2rem;
+    background: transparent;
+    border: 0.2rem solid;
+    border-radius: 50%;
+    font-size: 1rem;
+    margin: 1rem 0.3rem 1rem;
+    color: rgba(33, 150, 243, 0.8);
+    transition: 0.5s ease;
+}
+.social-media a:hover {
+    background-color: rgba(33, 150, 243, 0.8);
+    color: aqua;
+    box-shadow: 0 0 1.5rem rgba(33, 150, 243, 0.8);
+}
+#home h3:nth-of-type(2) {
+    margin-bottom: 2rem;
+}
+
+.images img {
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+}
+
+.shine-img {
+    box-shadow: 0 0 20px aqua;
+    transition: box-shadow 0.5s ease-in-out;
+    animation-name: pulse;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* .shine-img {
+    box-shadow: 0 0 20px aqua;
+    transition: box-shadow 0.5s ease-in-out;
+    animation-name: floatImage;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+@keyframes floatImage {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-2.4rem);
+    }
+    100% {
+        transform: translateY(0);
+    }
+} */
+.shine-img:hover {
+    box-shadow: 0 0 40px aqua;
+    transition: box-shadow 0.5s ease-in-out;
+}
+
+.details {
+    margin-left: 8%;
+    margin-top: 8%;
+}
+.details h1 {
+    font-size: 50px;
+}
+
+.shine-btn {
+    background-color: aqua;
+
+    color: black;
+    font-size: 1rem;
+    padding: 7px 20px;
+    border: none;
+    border-radius: 20px;
+    box-shadow: 0px 0px 20px aqua;
+    letter-spacing: 0.1rem;
+    transition: box-shadow 0.5s ease-in-out;
+    font-weight: 500;
+}
+
+.shine-btn:hover {
+    box-shadow: 0px 0px 40px aqua;
+
+    transition: box-shadow 0.5s ease-in-out;
+    outline: none;
+}
+.shine-btn a {
+    text-decoration: none;
+    color: black;
+}
+
+/* About section */
+
+#about {
+    background-color: rgb(46, 50, 50);
+    color: white;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    gap: 20px;
+}
+.container img {
+    border-radius: 50%;
+}
+
+/*Skills section*/
+.skills-container {
+    background-color: #000;
+    padding: 50px;
+    color: white;
+}
+.skills-container h1 {
+    text-align: center;
+    padding-bottom: 20px;
+}
+.skills-container p {
+    /* text-align: center; */
+    padding-top: 20px;
+    padding-bottom: 0;
+}
+
+.bar-container {
+    /* margin: left auto; */
+    display: flex;
+    gap: 80px;
+    justify-content: center;
+    align-items: center;
+}
+
+.skill-container {
+    /* max-width: 40rem;
+    margin-left: auto;
+    margin-right: auto;
+    height: 10px;
+    text-align: center; */
+
+    width: 20rem;
+    background-color: white;
+}
+
+.skills {
+    text-align: right;
+    height: 10px;
+    color: white;
+    font-weight: bold;
+}
+
+.html {
+    width: 90%;
+    background-color: #04aa6d;
+}
+.css {
+    width: 80%;
+    background-color: #04aa6d;
+}
+.js {
+    width: 70%;
+    background-color: #04aa6d;
+}
+.ux-ui {
+    width: 80%;
+    background-color: #04aa6d;
+}
+
+.agile {
+    width: 70%;
+    background-color: #04aa6d;
+}
+.vue-js {
+    width: 80%;
+    background-color: #04aa6d;
+}
+
+.react {
+    width: 80%;
+    background-color: #04aa6d;
+}
+.node-js {
+    width: 60%;
+    background-color: #04aa6d;
+}
+.github {
+    width: 70%;
+    background-color: #04aa6d;
+}
+.typescript {
+    width: 40%;
+    background-color: #04aa6d;
+}
+.redux {
+    width: 30%;
+    background-color: #04aa6d;
+}
+.mongodb {
+    width: 30%;
+    background-color: #04aa6d;
+}
+
+/*Portfolio section*/
+
+.portfolio {
+    background-color: rgb(46, 50, 50);
+    color: white;
+}
+.portfolio h2 {
+    padding-top: 4rem;
+    margin-bottom: 2rem;
+    text-align: center;
+    font-size: 3rem;
+}
+.portfolio-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 2rem;
+    padding: 4rem;
+    justify-content: center;
+}
+.portfolio-container .portfolio-box {
+    position: relative;
+    border-radius: 2rem;
+    box-shadow: 0 0 1rem rgb(46, 50, 50);
+    overflow: hidden;
+    display: flex;
+    width: 400px;
+}
+
+.portfolio-box img {
+    /* height: 200px;
+
+    width: 200px; */
+    width: 100%;
+    transition: 0.5s ease;
+}
+.portfolio-box:hover img {
+    transform: scale(1.1);
+}
+.portfolio-box .portfolio-layer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(0, 0, 0, -1), aqua);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 0 4rem;
+    transform: translateY(100%);
+    transition: 0.5s ease;
+}
+.portfolio-box:hover .portfolio-layer {
+    transform: translateY(0);
+}
+.portfolio-layer h4 {
+    font-size: 1.5rem;
+    font-weight: bolder;
+}
+.portfolio-layer p {
+    font-size: 0.8rem;
+    /* margin: 0.3rem 0 1rem; */
+    font-weight: bold;
+}
+.portfolio-layer a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 3.5rem;
+    height: 3.5rem;
+    background-color: white;
+    border-radius: 50%;
+}
+.portfolio-layer a i {
+    font-size: 2rem;
+    color: black;
+}
+
+/* Services section */
+#services {
+    background-color: black;
+    height: 80vh;
+}
+#services h1 {
+    color: white;
+    text-align: center;
+    padding-top: 50px;
+    font-size: 3rem;
+}
+.service-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+    margin-top: 40px;
+}
+.service-container div {
+    background-color: rgb(46, 50, 50);
+    color: white;
+}
+.bi {
+    color: aqua;
+    font-weight: bold;
+}
+.card-link {
+    background-color: aqua;
+
+    color: black;
+
+    font-size: 16px;
+    padding: 7px 20px;
+    border: none;
+    border-radius: 20px;
+    box-shadow: 0px 0px 20px aqua;
+
+    transition: box-shadow 0.5s ease-in-out;
+}
+.card-link:hover {
+    box-shadow: 0px 0px 40px aqua;
+    transition: box-shadow 0.5s ease-in-out;
+    outline: none;
+}
+
+/*Contact Section*/
+.contact {
+    background-color: rgb(46, 50, 50);
+    color: white;
+}
+
+.contact h2 {
+    margin-bottom: 1rem;
+    text-align: center;
+    color: white;
+    font-size: 3rem;
+    padding-top: 40px;
+}
+.contact-section {
+    padding-bottom: 40px;
+}
+.contact-info .bi {
+    font-size: 1.2rem;
+}
+.contact-info a {
+    font-size: 1rem;
+    font-weight: 500;
+}
+.contact .contact-section .shine-btn {
+    display: block;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+/* .contact form {
+    max-width: 40rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1rem;
+    text-align: center;
+}
+
+.contact form .input-box {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.contact form .input-box input {
+    width: 100%;
+    padding: 0.5rem;
+    font-size: 1rem;
+    color: white;
+    background: black;
+    border-radius: 0.8rem;
+    margin: 0.3rem 0;
+}
+
+.contact form textarea {
+    width: 100%;
+    padding: 0.5rem;
+    font-size: 1rem;
+    color: white;
+    background: black;
+    border-radius: 0.8rem;
+    margin: 0.3rem 0;
+}
+.contact form .input-box input {
+    width: 49%;
+}
+.contact form textarea {
+    resize: none;
+}
+.contact form .shine-btn {
+    margin: 1rem 0;
+} */
+
+.contact-info {
+    text-align: center;
+}
+.contact-info a {
+    text-decoration: none;
+    color: white;
+}
+/*Footer section*/
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 2rem 9%;
+    background: black;
+}
+.footer-text p {
+    font-size: 1rem;
+    font-weight: bold;
+    color: aqua;
+}
+
+.footer-icon a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.3rem;
+    background: aqua;
+    border-radius: 0.8rem;
+    box-shadow: 0px 0px 20px aqua;
+    transition: box-shadow 0.5s ease-in-out;
+}
+.footer-icon a:hover {
+    box-shadow: 0px 0px 40px aqua;
+    transition: box-shadow 0.5s ease-in-out;
+}
+.footer-icon a i {
+    font-size: 1.5rem;
+    color: black;
+}
+
+/*Media query for mobile and Tablet etc*/
+/*home section*/
+
+@media only screen and (min-width: 360px) and (max-width: 700px) {
+    #home {
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        /* flex-wrap: wrap; */
+        flex-wrap: nowrap;
+    }
+    .details {
+        margin-top: 2%;
+    }
+    #home img {
+        margin-top: 5%;
+    }
+}
+
+/*about section*/
+@media only screen and (min-width: 360px) and (max-width: 900px) {
+    .container {
+        flex-direction: column-reverse;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-wrap: nowrap;
+        gap: 0;
+    }
+}
+
+@media only screen and (min-width: 360px) and (max-width: 860px) {
+    .portfolio-container {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        align-items: center;
+    }
+}
+/*  */
+/*service section*/
+@media only screen and (min-width: 360px) and (max-width: 860px) {
+    .service-container {
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-wrap: nowrap;
+        gap: 20px;
+        margin-top: 0px;
+    }
+    #services {
+        height: 90vh;
+    }
+}
+@media (max-width: 450px) {
+    html {
+        font-size: 50%;
+    }
+    .contact form .input-box input {
+        width: 100%;
+    }
+}
+
+@media (max-width: 450px) {
+    .footer {
+        flex-direction: column-reverse;
+    }
+    .footer p {
+        text-align: center;
+    }
+}
+
+@media only screen and (min-width: 360px) and (max-width: 760px) {
+    .bar-container {
+        flex-direction: column;
+        gap: 0;
+    }
+}
